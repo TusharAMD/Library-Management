@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<style>
+*{
+background-color:#222222;
+}
+form{
+padding-top:20vh;
+display:flex;
+flex-direction:column;
+}
+.heading{
+font-size:30px;
+color:#00FF00;
+}
+
+
+</style>
+
+
+<div class="container">
+
+<form action="/addredirect" method = "POST" enctype="multipart/form-data">
+  <p class = "heading">Add book to database</p>
+  <input type="text" name="book-name" placeholder="Please Write Book Name"><br>
+  <input type="text" name="book-isbn" placeholder="Please Write Book ISBN code"><br>
+  <input type="text" name="taken-by" placeholder="Currently book is with"><br>
+  <input type="date" name="date-taken" placeholder="It was taken on"><br>
+  <input type="file" name="book-image"><br>
+
+  <input type="submit" class="btn btn-dark" value="Submit">
+</form> 
+</div>
+
+
+{% endblock %}

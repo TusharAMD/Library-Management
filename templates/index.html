@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+<ul id="bookManagement" class="dropdown-content">
+  <li><a href="#!">Add</a></li>
+  <li><a href="#!">Remove</a></li>
+  <li><a href="#!">Delete</a></li>
+  <li><a href="#!">Update</a></li>
+  
+</ul>
+
+
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        
+        <li><a href="/registerpage">Register</a></li>
+        <li><a href="/loginpage">Login</a></li>
+      </ul>
+    </div>
+</nav>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var drop = document.querySelectorAll('.dropdown-trigger');
+    M.Dropdown.init(drop);
+  });
+
+</script>
+<style>
+.material-icons { display: inline-flex; vertical-align: text-bottom; }
+</style>
+
+<h3 style="color:red">Please Login / Register</h3>
+
+{% endblock %}
