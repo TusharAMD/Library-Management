@@ -5,6 +5,9 @@ import smtplib, ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.message import EmailMessage
+import base64
+import requests
+
 
 app = Flask(__name__)
 app.secret_key = 'mysecret'
@@ -105,12 +108,26 @@ def bookaddredirect():
         f = request.files['book-image']  
         f.save(f.filename)
         
+        ###SAVE IMAGE TO IMG BB###
+
+        with open(f"{f.filename}", "rb") as file:
+            url = "https://api.imgbb.com/1/upload"
+            payload = {
+                "key": "c4b63af118f97f88cdeea980cdb4d6c9",
+                "image": base64.b64encode(file.read()),
+            }
+            res = requests.post(url, payload)
+            print(res.json)
+
+        ### DONE ###
+        
         ###DATABASE###
         
         client = pymongo.MongoClient("mongodb+srv://admin:admin@cluster0.wonbr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
         db = client['Library']
         collection = db["books"]
         collection.insert_one(bookdata)
+        
         
         
         ###OVER###
