@@ -7,6 +7,7 @@ from email.mime.text import MIMEText
 from email.message import EmailMessage
 
 app = Flask(__name__)
+app.secret_key = 'mysecret'
 import bcrypt
 @app.route('/')
 def index():
@@ -119,5 +120,5 @@ def bookaddredirect():
 
 
 if __name__ == '__main__':
-    app.secret_key = 'mysecret'
+    
     app.run(debug=True)
