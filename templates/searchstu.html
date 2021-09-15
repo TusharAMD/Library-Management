@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<style>
+body{
+background-color:#222222;
+}
+form{
+padding-top:20vh;
+padding-bottom:20px;
+display:flex;
+flex-direction:column;
+}
+.heading{
+font-size:30px;
+color:#00FF00;
+}
+table{
+color:white;
+background-color:#00ab58;
+margin-bottom:20px;
+}
+tr:nth-child(even) {
+    background-color: #39b378;
+}
+
+
+</style>
+
+
+<div class="container">
+
+<form action="/searchsturedirect" method = "POST">
+  <p class = "heading">Search Book</p>
+
+  <input type="text" name="studentid" placeholder="Please Write Student ID here"><br>
+
+
+  <input type="submit" class="btn btn-dark" value="Submit">
+</form>
+
+
+
+<table class="table">
+<tr>
+<td>Student Name</td>
+<td>Student ID</td>
+<td>Student Class</td>
+<td>Student Email</td>
+<td>Student Image</td>
+</tr>
+{% for ele in context %}
+<tr>
+<td>{{ele.get('student_name')}}</td>
+<td>{{ele.get('student_id')}}</td>
+<td>{{ele.get('student_class')}}</td>
+<td>{{ele.get('student_email')}}</td>
+<td><img  src = {{ele.get('student_image')}} style="width: 100px;"></img></td>
+
+</tr>
+{% endfor %}
+</table>
+
+
+ 
+</div>
+
+
+{% endblock %}

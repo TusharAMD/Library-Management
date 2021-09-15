@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<style>
+body{
+background-color:#222222;
+}
+form{
+padding-top:20vh;
+padding-bottom:20px;
+display:flex;
+flex-direction:column;
+}
+.heading{
+font-size:30px;
+color:#00FF00;
+}
+table{
+color:white;
+background-color:#00ab58;
+margin-bottom:20px;
+}
+tr:nth-child(even) {
+    background-color: #39b378;
+}
+
+
+</style>
+
+
+<div class="container">
+
+<form action="/searchredirect" method = "POST">
+  <p class = "heading">Search Book</p>
+
+  <input type="text" name="book-isbn" placeholder="Please Write Book ISBN code"><br>
+
+
+  <input type="submit" class="btn btn-dark" value="Submit">
+</form>
+
+
+
+<table class="table">
+<tr>
+<td>Book Name</td>
+<td>Book ISBN</td>
+<td>Taken By</td>
+<td>Date Taken</td>
+<td>Book Image</td>
+</tr>
+{% for ele in context %}
+<tr>
+<td>{{ele.get('book-name')}}</td>
+<td>{{ele.get('book-isbn')}}</td>
+<td>{{ele.get('taken-by')}}</td>
+<td>{{ele.get('date-taken')}}</td>
+<td><img  src = {{ele.get('book-image')}} style="width: 100px;"></img></td>
+
+</tr>
+{% endfor %}
+</table>
+
+
+ 
+</div>
+
+
+{% endblock %}

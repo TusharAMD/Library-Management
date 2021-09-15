@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<style>
+*{
+background-color:#222222;
+}
+form{
+padding-top:20vh;
+display:flex;
+flex-direction:column;
+}
+.heading{
+font-size:30px;
+color:#00FF00;
+}
+
+
+</style>
+
+
+<div class="container">
+
+<form action="/removeredirect" method = "POST" enctype="multipart/form-data">
+  <p class = "heading">Delete Book from Database</p>
+
+  <input type="text" name="book-isbn" placeholder="Please Write Book ISBN code"><br>
+
+
+  <input type="submit" class="btn btn-dark" value="Submit">
+</form> 
+</div>
+
+
+{% endblock %}

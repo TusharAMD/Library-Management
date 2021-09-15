@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<style>
+*{
+background-color:#222222;
+}
+form{
+padding-top:20vh;
+display:flex;
+flex-direction:column;
+}
+.heading{
+font-size:30px;
+color:#00FF00;
+}
+
+
+</style>
+
+
+<div class="container">
+
+<form action="/addsturedirect" method = "POST" enctype="multipart/form-data">
+  <p class = "heading">Add Student to database</p>
+  <input type="text" name="student_name" placeholder="Please Enter Student Name"><br>
+  <input type="text" name="student_email" placeholder="Please Enter Student Email"><br>
+  <input type="text" name="student_id" placeholder="Please Enter Student ID"><br>
+  <input type="text" name="student_class" placeholder="Please Enter Student Class"><br>
+  <input type="file" name="student_image"><br>
+
+  <input type="submit" class="btn btn-dark" value="Submit">
+</form> 
+</div>
+
+
+{% endblock %}
