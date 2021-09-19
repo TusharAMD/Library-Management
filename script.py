@@ -83,7 +83,7 @@ def register():
             #### Email Done ####
             
             hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
-            collection.insert({'email' : request.form['email'],'name' : request.form['username'], 'password' : hashpass})
+            collection.insert({'email' : request.form['email'],'name' : request.form['username'], 'password' : hashpass, 'role':request.form['role']})
             session['username'] = request.form['username']
             return redirect(url_for('index'))
         
