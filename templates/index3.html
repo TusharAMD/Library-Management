@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+<ul id="bookManagement" class="dropdown-content">
+  <li><a href="/search">Search</a></li>
+</ul>
+
+
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="dropdown-trigger" href="#" data-target="bookManagement">Book Management<span  class="material-icons">expand_more</span ></a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div>
+</nav>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var drop = document.querySelectorAll('.dropdown-trigger');
+    M.Dropdown.init(drop);
+  });
+
+</script>
+<style>
+.material-icons { display: inline-flex; vertical-align: text-bottom; }
+</style>
+
+<h3>Welcome {{context.username}}</h3>
+
+{% endblock %}

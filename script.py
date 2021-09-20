@@ -15,10 +15,12 @@ import bcrypt
 @app.route('/')
 def index():
     if 'username' in session:
-        
         context={}
         context["username"]=session["username"]
-        return render_template('index2.html', context=context)
+        if session['roles'] == "student":
+            return render_template('index3.html', context=context)
+        else:
+            return render_template('index2.html', context=context)
     return render_template('index.html')
 
 @app.route('/loginpage')
@@ -83,8 +85,9 @@ def register():
             #### Email Done ####
             
             hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
-            collection.insert({'email' : request.form['email'],'name' : request.form['username'], 'password' : hashpass, 'role':request.form['role']})
+            collection.insert({'email' : request.form['email'],'name' : request.form['username'], 'password' : hashpass, 'role':request.form['roles']})
             session['username'] = request.form['username']
+            session['roles'] = request.form['roles']
             return redirect(url_for('index'))
         
         return 'That username already exists!'

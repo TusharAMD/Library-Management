@@ -49,6 +49,9 @@ tr:nth-child(even) {
 <td>Student ID</td>
 <td>Student Class</td>
 <td>Student Email</td>
+<td>How many books</td>
+<td>Violations</td>
+<td>Is Defaulter?</td>
 <td>Student Image</td>
 </tr>
 {% for ele in context %}
@@ -57,6 +60,10 @@ tr:nth-child(even) {
 <td>{{ele.get('student_id')}}</td>
 <td>{{ele.get('student_class')}}</td>
 <td>{{ele.get('student_email')}}</td>
+<td>{{ele.get('how_many_books')}}</td>
+<td>{{ele.get('countViolation')}}</td>
+<td>{{ele.get('isDefaulter')}}</td>
+<td>{{ele.get('isactive')}}</td>
 <td><img  src = {{ele.get('student_image')}} style="width: 100px;"></img></td>
 
 </tr>
