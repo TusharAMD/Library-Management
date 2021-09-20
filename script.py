@@ -15,6 +15,15 @@ import bcrypt
 @app.route('/')
 def index():
     if 'username' in session:
+        
+        client = pymongo.MongoClient("mongodb+srv://admin:admin@cluster0.wonbr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+        db = client['Library']
+        collection = db["Librarian"]
+
+        login_user = collection.find_one({'name' : session['username']})
+        
+        
+        session['roles'] = login_user['role']
         context={}
         context["username"]=session["username"]
         if session['roles'] == "student":
