@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-11T14:52:09.044Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39" etag="KhdSqn4A-0ApoiZrWf7W" version="17.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-11T15:34:19.007Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39" etag="HD-oQS8pHa-a29tBWNKZ" version="17.1.3" type="github">
   <diagram id="Elxtte6U91YA1dK8LiPh" name="Page-1">
-    <mxGraphModel dx="2185" dy="1808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3020" dy="2250" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,16 +56,28 @@
         <mxCell id="dZ2E-uWNlFxPu9RTKk2H-18" value="&lt;font style=&quot;font-size: 40px&quot;&gt;Face_Rec.py&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-80" y="10" width="390" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-19" target="dZ2E-uWNlFxPu9RTKk2H-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="dZ2E-uWNlFxPu9RTKk2H-19" value="Change Firestore Boolean Value to True and False after delay of 5 seconds" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="245" y="400" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="dZ2E-uWNlFxPu9RTKk2H-21" value="&lt;font style=&quot;font-size: 15px&quot;&gt;True&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=40;" vertex="1" parent="1">
           <mxGeometry x="180" y="390" width="60" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;opacity=50;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-22" target="dZ2E-uWNlFxPu9RTKk2H-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="890" y="-40" />
+              <mxPoint x="890" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="dZ2E-uWNlFxPu9RTKk2H-22" value="Firestore Cloud database" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="420" y="-120" width="110" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-23" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=15;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-19" target="dZ2E-uWNlFxPu9RTKk2H-22">
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-23" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=15;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;opacity=50;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-19" target="dZ2E-uWNlFxPu9RTKk2H-22">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="210" as="sourcePoint" />
             <mxPoint x="440" y="160" as="targetPoint" />
@@ -74,6 +86,9 @@
               <mxPoint x="280" y="100" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-24" target="dZ2E-uWNlFxPu9RTKk2H-48">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dZ2E-uWNlFxPu9RTKk2H-24" value="Send WhatsApp Message to owner" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="75" y="530" width="120" height="60" as="geometry" />
@@ -88,10 +103,137 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="dZ2E-uWNlFxPu9RTKk2H-29" value="&lt;font style=&quot;font-size: 40px&quot;&gt;Flask Webhook&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="450" y="10" width="390" height="50" as="geometry" />
+          <mxGeometry x="425" y="10" width="390" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-30" target="dZ2E-uWNlFxPu9RTKk2H-32">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dZ2E-uWNlFxPu9RTKk2H-30" value="This is connected to Twilio and whenever Twilio receives message it forwards to this endpoint&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="535" y="90" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-32" target="dZ2E-uWNlFxPu9RTKk2H-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-32" target="dZ2E-uWNlFxPu9RTKk2H-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-32" value="If we receive &lt;br&gt;&quot;Open&quot;&lt;br&gt;Else if we receive&lt;br&gt;&quot;Close&quot;" style="rhombus;whiteSpace=wrap;html=1;fontSize=15;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="230" width="146.67" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-34" value="Change Firestore to &quot;True&quot;" style="whiteSpace=wrap;html=1;fontSize=15;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660.005" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-36" value="On Open" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="566.67" y="270" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-37" value="Change Firestore to &quot;False&quot;" style="whiteSpace=wrap;html=1;fontSize=15;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="433.335" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-39" value="On Close" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="493.34" y="415" width="86.66" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-40" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="640" as="sourcePoint" />
+            <mxPoint x="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-41" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=15;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;opacity=50;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-34" target="dZ2E-uWNlFxPu9RTKk2H-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="310" as="sourcePoint" />
+            <mxPoint x="930" y="-30" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="800" y="260" />
+              <mxPoint x="780" y="220" />
+              <mxPoint x="830" y="-40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-42" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=15;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.3;entryDx=0;entryDy=0;opacity=50;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-37" target="dZ2E-uWNlFxPu9RTKk2H-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="310" as="sourcePoint" />
+            <mxPoint x="800" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="770" y="510" />
+              <mxPoint x="810" y="300" />
+              <mxPoint x="860" y="-70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-43" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1370" y="640" as="sourcePoint" />
+            <mxPoint x="1370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-44" value="&lt;font style=&quot;font-size: 40px&quot;&gt;Arduino Control&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="10" width="390" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-45" target="dZ2E-uWNlFxPu9RTKk2H-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-45" value="Check for Firestore&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="120" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-46" target="dZ2E-uWNlFxPu9RTKk2H-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-46" target="dZ2E-uWNlFxPu9RTKk2H-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-46" value="If Value is True" style="rhombus;whiteSpace=wrap;html=1;fontSize=15;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="260" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;opacity=50;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-48" target="dZ2E-uWNlFxPu9RTKk2H-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="-90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="305" y="680" />
+              <mxPoint x="-120" y="680" />
+              <mxPoint x="-120" y="-160" />
+              <mxPoint x="670" y="-160" />
+              <mxPoint x="670" y="-90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-48" value="Store Image with date and time in MongoDB" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;entryX=-0.016;entryY=0.851;entryDx=0;entryDy=0;entryPerimeter=0;opacity=50;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-51" target="dZ2E-uWNlFxPu9RTKk2H-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1400" y="-100" />
+              <mxPoint x="1400" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-51" value="MongoDB Atlas" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="-150" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-54" value="1. Open Latch by rotating top servo&lt;br&gt;2. Then open door by rotating bottom servo" style="whiteSpace=wrap;html=1;fontSize=15;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="290" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-56" value="1. Close the door by rotating bottom motor&lt;br&gt;2. Close the latch by rotating top servo" style="whiteSpace=wrap;html=1;fontSize=15;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="925" y="505" width="325" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-58" value="&lt;font style=&quot;font-size: 40px&quot;&gt;React Native App&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="10" width="390" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-59" target="dZ2E-uWNlFxPu9RTKk2H-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-59" value="Fetches the Data from MongoDB database." style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="130" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="dZ2E-uWNlFxPu9RTKk2H-60" target="dZ2E-uWNlFxPu9RTKk2H-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-60" value="Shows Name and Timing" style="whiteSpace=wrap;html=1;fontSize=15;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="240" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dZ2E-uWNlFxPu9RTKk2H-62" value="On Clicking element modal opens which shows Image of visitor" style="whiteSpace=wrap;html=1;fontSize=15;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="380" width="220" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
